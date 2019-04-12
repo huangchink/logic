@@ -1080,7 +1080,7 @@ void fourterm(int four[4][4])
 				casetwo[27]++;
 
 			}
-			if (casefour_bar[4] != 1 && (four[0][0] == 1||four[0][0]==16 )&& (four[3][0] == 1&&four[3][0]==16) && casefour_square[12] != 1 && casefour_square[15] != 1 && caseeight[3] != 1)
+			if (casefour_bar[4] != 1 && (four[0][0] == 1||four[0][0]==16 )&& (four[3][0] == 1||four[3][0]==16) && casefour_square[12] != 1 && casefour_square[15] != 1 && caseeight[3] != 1)
 			{
 				casetwo[28]++;
 			}
@@ -1101,6 +1101,12 @@ void fourterm(int four[4][4])
 			{
 				cout << casefour_bar[i] << " ";
 			}
+			cout << endl;
+			for (int i = 0; i<16; i++)
+			{
+				cout << casefour_square[i] << " ";
+			}
+			cout << endl;
 			for (int i = 0; i<4; i++)
 			{
 				cout << caseeight[i] << " ";
